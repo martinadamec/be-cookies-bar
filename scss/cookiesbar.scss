@@ -1,7 +1,7 @@
 $_cbBackground: #333 !default;
 $_cbMaxWidth: 1000px !default;
 $_cbColor: #fff !default;
-$_cbFontSize: 14px !default;
+$_cbFontSize: 13px !default;
 $_cbFontLineHeight: 1.3em !default;
 
 $_cbAgree--Color: #fff !default;
@@ -14,7 +14,7 @@ $_cbAgree--FontLineHeight: $_cbFontLineHeight !default;
 $_cbAgree--Padding: 6px 12px !default;
 
 $_cbInfo--Color: #fff !default;
-$_cbInfo--FontSize: 13px !default;
+$_cbInfo--FontSize: $_cbFontSize !default;
 $_cbInfo--FontLineHeight: $_cbFontLineHeight !default;
 
 ._cb {
@@ -90,7 +90,7 @@ $_cbInfo--FontLineHeight: $_cbFontLineHeight !default;
 	}
 
 	// Responsive
-	@media (max-width: 500px) {
+	@media (max-width: 700px) {
 		._cb-content {
 			flex-direction: column;
 			._cb-text {

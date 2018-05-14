@@ -8,7 +8,7 @@
 				'text': 'Tento web využívá cookies. Jeho používáním s tím vyjadřujete souhlas.',
 				// Agree button
 				'agree_classes': '_cb-js-agree',
-				'agree_text': 'Souhlasím',
+				'agree_text': 'Přečetl/la jsem a souhlasím',
 				// More info button
 				'info_text': 'Více informací',
 				'info_classes': '',
