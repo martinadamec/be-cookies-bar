@@ -1,0 +1,15 @@
+{
+	"name": "adamecmartin_core_packages",
+	"version": "1.0.0",
+	"description": "AdamecMartin.cz",
+	"author": "Martin Adamec",
+	"license": "ISC",
+	"private": true,
+	"devDependencies": {
+		"gulp": "*",
+		"autoprefixer": "*",
+		"gulp-postcss": "*",
+		"gulp-sass": "*",
+		"gulp-minify": "*"
+	}
+}

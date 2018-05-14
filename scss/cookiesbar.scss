@@ -1,0 +1,102 @@
+$_cbBackground: #333 !default;
+$_cbMaxWidth: 1000px !default;
+$_cbColor: #fff !default;
+$_cbFontSize: 14px !default;
+$_cbFontLineHeight: 1.3em !default;
+
+$_cbAgree--Color: #fff !default;
+$_cbAgree--Color--Hover: #fff !default;
+$_cbAgree--Background: #008B23 !default;
+$_cbAgree--Background--Hover: #00ab2b !default;
+$_cbAgree--Radius: 4px !default;
+$_cbAgree--FontSize: $_cbFontSize !default;
+$_cbAgree--FontLineHeight: $_cbFontLineHeight !default;
+$_cbAgree--Padding: 6px 12px !default;
+
+$_cbInfo--Color: #fff !default;
+$_cbInfo--FontSize: 13px !default;
+$_cbInfo--FontLineHeight: $_cbFontLineHeight !default;
+
+._cb {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 12px 16px 10px;
+	font-size: $_cbFontSize;
+	line-height: $_cbFontLineHeight;
+	text-align: center;
+	z-index: 10000000;
+	background-color: $_cbBackground;
+	color: $_cbColor;
+
+	// Container
+	._cb-container {
+		max-width: $_cbMaxWidth;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+
+	// content container
+	._cb-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// Buttons
+	._cb-buttons {
+		display: flex;
+		align-items: center;
+		._cb-agree, ._cb-info {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	// Info button
+	._cb-info {
+		a {
+			display: block;
+			white-space: nowrap;
+			color: $_cbInfo--Color;
+			font-size: $_cbInfo--FontSize;
+			line-height: $_cbInfo--FontLineHeight;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	// Agree button
+	._cb-agree {
+		a {
+			display: block;
+			color: $_cbAgree--Color;
+			background: $_cbAgree--Background;
+			border-radius: $_cbAgree--Radius;
+			font-size: $_cbAgree--FontSize;
+			line-height: $_cbAgree--FontLineHeight;
+			padding: $_cbAgree--Padding;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				background-color: $_cbAgree--Background--Hover;
+				color: $_cbAgree--Color--Hover;
+			}
+		}
+	}
+
+	// Responsive
+	@media (max-width: 500px) {
+		._cb-content {
+			flex-direction: column;
+			._cb-text {
+				margin-bottom: 10px;
+				text-align: center;
+			}
+		}
+	}
+}
