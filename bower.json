@@ -3,7 +3,7 @@
   "authors": [
     "Martin Adamec <jsem@adamecmartin.cz>"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Component for creating cookies bar.",
   "main": "dist/cookiesbar.js",
   "license": "MIT",
