@@ -13,7 +13,7 @@
 				'info_text': 'Více informací',
 				'info_classes': '',
 				'info_link': '',
-				'info_target': '_blank',
+				'info_target': '_self',
 				// Bar
 				'bar_classes': '_cb',
 				'bar_html': '<div class="[main_class] [classes]"><div class="_cb-container"><div class="_cb-content"><div class="_cb-text">[text]</div><div class="_cb-buttons"><div class="_cb-agree"><a href="#" class="[agree_classes]">[agree_text]</a></div><div class="_cb-info"><a href="[info_link]" target="[info_target]" class="[info_classes]">[info_text]</a></div></div></div></div></div>'
