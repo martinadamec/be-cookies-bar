@@ -31,8 +31,8 @@
 			},
 
 			getCookie:  function(name) {
-				match = document.cookie.match(new RegExp('(^| )' + name + '=(?<value>([^;]+))'));
-				return match ? match.groups.value : null;
+				match = document.cookie.match(new RegExp('(^| )' + name + '=1'));
+				return !!match;
 			},
 
 			createBar: function () {
