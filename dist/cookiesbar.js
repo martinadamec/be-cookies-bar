@@ -10,13 +10,15 @@
 				'agree_classes': '_cb-js-agree',
 				'agree_text': 'Přečetl/la jsem a souhlasím',
 				// More info button
+				'info': true,
 				'info_text': 'Více informací',
 				'info_classes': '',
 				'info_link': '',
 				'info_target': '_self',
+				'info_html': '<div class="_cb-info"><a href="[info_link]" target="[info_target]" class="[info_classes]">[info_text]</a></div>',
 				// Bar
 				'bar_classes': '_cb',
-				'bar_html': '<div class="[main_class] [classes]"><div class="_cb-container"><div class="_cb-content"><div class="_cb-text">[text]</div><div class="_cb-buttons"><div class="_cb-agree"><a href="#" class="[agree_classes]">[agree_text]</a></div><div class="_cb-info"><a href="[info_link]" target="[info_target]" class="[info_classes]">[info_text]</a></div></div></div></div></div>'
+				'bar_html': '<div class="[main_class] [classes]"><div class="_cb-container"><div class="_cb-content"><div class="_cb-text">[text]</div><div class="_cb-buttons"><div class="_cb-agree"><a href="#" class="[agree_classes]">[agree_text]</a></div>[info]</div></div></div></div>'
 			},
 
 			init: function (options) {
@@ -39,6 +41,14 @@
 				var self = this,
 					html = self.options.bar_html,
 					replace = ['main_class', 'classes', 'text', 'agree_classes', 'agree_text', 'info_text', 'info_classes', 'info_link', 'info_target'];
+
+				// Info
+				if ( self.options.info ) {
+					html = html.replace('[info]', self.options.info_html);
+				}
+				else {
+					html = html.replace('[info]', '');
+				}
 
 				for ( i in replace )
 				{
