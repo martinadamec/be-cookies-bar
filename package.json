@@ -1,6 +1,6 @@
 {
-	"name": "be_cookies_bar",
-	"version": "2.0.0",
+	"name": "am-cookies-bar",
+	"version": "1.0.2",
 	"description": "Utility for a cookies bar.",
 	"author": "Martin Adamec <info@adamecmartin.cz>",
 	"license": "MIT",
