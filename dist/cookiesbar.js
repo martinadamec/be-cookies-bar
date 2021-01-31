@@ -8,13 +8,13 @@
 				'text': 'Tento web využívá cookies. Jeho používáním s tím vyjadřujete souhlas.',
 				// Agree button
 				'agree_classes': '_cb-js-agree',
-				'agree_text': 'Přečetl/la jsem a souhlasím',
+				'agree_text': 'Souhlasím',
 				// More info button
 				'info': true,
 				'info_text': 'Více informací',
 				'info_classes': '',
-				'info_link': '',
-				'info_target': '_self',
+				'info_link': 'https://policies.google.com/technologies/cookies?hl=cs',
+				'info_target': '_blank',
 				'info_html': '<div class="_cb-info"><a href="[info_link]" target="[info_target]" class="[info_classes]">[info_text]</a></div>',
 				// Bar
 				'bar_classes': '_cb',

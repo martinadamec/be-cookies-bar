@@ -1,15 +1,24 @@
 {
-	"name": "adamecmartin_core_packages",
-	"version": "1.0.0",
-	"description": "AdamecMartin.cz",
-	"author": "Martin Adamec",
-	"license": "ISC",
-	"private": true,
+	"name": "be_cookies_bar",
+	"version": "2.0.0",
+	"description": "Utility for a cookies bar.",
+	"author": "Martin Adamec <info@adamecmartin.cz>",
+	"license": "MIT",
+	"main": "dist/cookiesbar.js",
+	"homepage": "https://adamecmartin.cz",
+	"dependencies": {
+		"jquery": ">=1.10.2"
+	},
 	"devDependencies": {
-		"gulp": "*",
-		"autoprefixer": "*",
-		"gulp-postcss": "*",
-		"gulp-sass": "*",
-		"gulp-minify": "*"
-	}
+		"gulp": "^4.0.2",
+		"autoprefixer": "^9.8.6",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-minify": "^3.1.0"
+	},
+	"browserslist": [
+		"last 2 version",
+		"> 5%",
+		"IE 9"
+	]
 }
